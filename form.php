@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
+    
+    <title> Form Sample ! </title>
+    
 </head>
+    
 <body>
+    
     <?php
     $name = $email = $gender = $comment = $website = "";
 
@@ -21,8 +27,8 @@
         return $data;
         echo "<br>";
     }
-    
     ?>
+    
     <h2>PHP Form </h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
@@ -36,6 +42,7 @@
     <input type="radio" name="gender" value="other">other
     <br><br>
     <input type="Submit" name="submit" value="Submit">
+        
     <?php 
     echo "<h2>Your Input:</h2>";
     echo $name;
